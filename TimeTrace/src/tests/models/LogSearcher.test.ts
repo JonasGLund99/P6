@@ -30,8 +30,8 @@ describe('LogSearcher', () => {
                 {start: 1708935754504, end: 1708935756677}
             ]
             const expectedZones: MonaaZone[] = [
-                {match: [0, 1, 2, 3, 4, 5]},
-                {match: [1, 2, 3, 4, 5]}
+                {lineMatches: [0, 1, 2, 3, 4, 5]},
+                {lineMatches: [1, 2, 3, 4, 5]}
             ]
 
             // Act

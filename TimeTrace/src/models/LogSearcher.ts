@@ -13,7 +13,7 @@ export class LogSearcher {
                 let timestampISO: string = extractTimeStamp(line);
                 const eventTimeStamp = new Date(timestampISO).getTime();
                 if (eventTimeStamp >= SearchIntervals[i].start && eventTimeStamp <= SearchIntervals[i].end) {
-                    foundmatch.match.push(lineIndex)
+                    foundmatch.lineMatches.push(lineIndex)
                 }
             });
             MonaaZoneMatches.push(foundmatch);

@@ -35,8 +35,8 @@ describe('LogHandler', () => {
                 "============================="
             ];
             const expectedZones: MonaaZone[] = [
-                {match: [0, 1, 2, 3, 4, 5]},
-                {match: [1, 2, 3, 4, 5]}
+                {lineMatches: [0, 1, 2, 3, 4, 5]},
+                {lineMatches: [1, 2, 3, 4, 5]}
             ]
 
             // Act

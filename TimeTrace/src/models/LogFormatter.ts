@@ -29,7 +29,7 @@ export class LogFormatter {
     }
 
     getMappedValue(event: string, mappings: Map<string, string>): string {
-
+        event = event.replace(/(\r\n|\n|\r)/gm, "") //remove carriage returns
         let mappedValue: string = "Z" //Mapped value is always Z if not found in mappings
         const foundMapValue = mappings.get(event)
         if (foundMapValue !== undefined && foundMapValue !== "") {  

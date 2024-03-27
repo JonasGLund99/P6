@@ -5,11 +5,11 @@ interface SearchProps {
 }
 
 export default function Search({ onSubmit }: SearchProps) {
-    const [TRE, setQuery] = useState('');
+    const [tre, setTre] = useState('');
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        onSubmit(TRE);
+        onSubmit(tre);
     };
 
     return (
@@ -24,8 +24,8 @@ export default function Search({ onSubmit }: SearchProps) {
                     className="block w-full p-4 text-sm text-gray-900 bg-white border border-gray-600 rounded-lg ps-10 focus:ring-blue-500 focus:border-blue-500"
                     placeholder='Enter TRE string'
                     name="TRE"
-                    value={TRE}
-                    onChange={(e) => setQuery(e.target.value)}
+                    value={tre}
+                    onChange={(e) => setTre(e.target.value)}
                     required
                 />
                 <button

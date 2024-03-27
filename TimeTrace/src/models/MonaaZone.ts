@@ -4,5 +4,5 @@
    * file lines that represent the event that was a part of the match.  
    */
 export class MonaaZone {
-    public match: number[] = []
+    public lineMatches: number[] = []
 }
